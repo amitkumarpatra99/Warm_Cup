@@ -45,4 +45,23 @@ Creators can receive support, display their work, and grow their community — o
 ### Hosting
 - Vercel
 
----
+warm-cup/
+├── app/
+│   ├── api/
+│   │   ├── create-order/
+│   │   │   └── route.js
+│   │   └── verify-payment/
+│   │       └── route.js
+│   ├── layout.js
+│   ├── page.js
+│   └── globals.css
+├── components/
+│   └── DonateButton.jsx
+├── lib/
+│   ├── db.js
+│   ├── razorpay.js
+│   └── Donation.js
+├── .env.example
+├── next.config.js
+├── package.json
+└── README.md
