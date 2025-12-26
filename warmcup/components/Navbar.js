@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { FaHome, FaInfoCircle, FaPhoneAlt } from "react-icons/fa";
+import { FaHome, FaInfoCircle, FaPhoneAlt, FaImages } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { Coffee } from "lucide-react";
 
@@ -80,6 +80,14 @@ export default function Navbar() {
                 }`}
             >
               <motion.div whileHover={{ rotate: 10 }}><FaPhoneAlt /></motion.div> Contact
+            </Link>
+
+            <Link
+              href="/gallery"
+              className={`flex items-center gap-2 text-sm font-medium transition-colors ${isActive("/gallery") ? "text-cyan-400" : "text-gray-200 hover:text-white"
+                }`}
+            >
+              <motion.div whileHover={{ rotate: 10 }}><FaImages /></motion.div> Gallery
             </Link>
 
             <button
@@ -199,6 +207,17 @@ export default function Navbar() {
                         }`}
                     >
                       <motion.div whileHover={{ rotate: 10 }}><FaPhoneAlt /></motion.div> Contact
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/gallery"
+                      onClick={() => setOpen(false)}
+                      className={`block w-full px-4 py-2 rounded-xl flex gap-3 items-center ${isActive("/gallery") ? "bg-white/10 text-cyan-400" : "text-gray-200 hover:bg-white/10"
+                        }`}
+                    >
+                      <motion.div whileHover={{ rotate: 10 }}><FaImages /></motion.div> Gallery
                     </Link>
                   </li>
 
