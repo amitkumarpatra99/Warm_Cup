@@ -22,7 +22,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 const Footer = () => {
   const icons = [
-      {
+    {
       id: 0,
       icon: <User2Icon size={18} />,
       link: "https://mrpatra.vercel.app/",
@@ -47,12 +47,13 @@ const Footer = () => {
       icon: <Twitter size={18} />,
       link: "https://x.com/mr_patra_",
     },
-  
+
   ];
 
   const quickLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
     { name: "Donate", href: "/paymentpage" },
   ];
 
@@ -94,7 +95,7 @@ const Footer = () => {
           </div>
 
           <p className="text-sm text-gray-400 leading-relaxed">
-            Support creators, developers, and dreamers — one warm cup at a time ☕  
+            Support creators, developers, and dreamers — one warm cup at a time ☕
             Helping creativity stay inspired and connected.
           </p>
 

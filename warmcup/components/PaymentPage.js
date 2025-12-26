@@ -17,8 +17,10 @@ const PaymentPage = () => {
     setPaymentform({ ...paymentform, [e.target.name]: e.target.value });
   };
 
-  const handleDirectPay = () => {
-    if (!paymentform.name || !paymentform.amount) {
+  const handleDirectPay = (amountOverride) => {
+    const amountToPay = amountOverride || paymentform.amount;
+
+    if (!paymentform.name || !amountToPay) {
       alert("Please enter your name and amount before paying!");
       return;
     }
@@ -37,12 +39,12 @@ const PaymentPage = () => {
         className="text-center mb-10"
       >
         <h1 className="text-4xl md:text-5xl font-bold mb-3">
-          Send a Warm Cup to  
+          Send a Warm Cup to
           <span className="text-cyan-400"> {username}</span>
         </h1>
 
         <p className="text-gray-300 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
-          Love the work? Fuel creativity with a warm cup ☕  
+          Love the work? Fuel creativity with a warm cup ☕
           Your support means more than ever ✨
         </p>
       </motion.div>
@@ -99,11 +101,11 @@ const PaymentPage = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={handleDirectPay}
+            onClick={() => handleDirectPay()}
             className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-blue-600 hover:to-cyan-500 transition-all font-semibold text-lg py-3 rounded-xl shadow-lg shadow-cyan-400/30"
           >
             <CreditCard size={18} className="text-white" />
-            PAY 
+            PAY
           </motion.button>
 
           {/* ⚡ Quick Amount Buttons */}
@@ -114,7 +116,7 @@ const PaymentPage = () => {
                 whileHover={{ scale: 1.1 }}
                 onClick={() => {
                   setPaymentform({ ...paymentform, amount: amt });
-                  handleDirectPay();
+                  handleDirectPay(amt);
                 }}
                 className="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-600 to-blue-700 hover:from-blue-700 hover:to-cyan-600 text-white font-medium transition-all shadow-md shadow-cyan-400/30"
               >
