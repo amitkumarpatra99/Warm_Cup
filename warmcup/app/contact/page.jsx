@@ -53,12 +53,13 @@ export default function Contact() {
 
                 {/* 📝 Right Side - Contact Form */}
                 <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl">
-                    <form className="space-y-6">
+                    <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert("Message sent!"); }}>
                         <div>
                             <label className="block text-sm font-medium text-gray-300 mb-2">Name</label>
                             <input
                                 type="text"
                                 placeholder="Your Name"
+                                required
                                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-gray-500"
                             />
                         </div>
@@ -68,6 +69,7 @@ export default function Contact() {
                             <input
                                 type="email"
                                 placeholder="your@email.com"
+                                required
                                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-gray-500"
                             />
                         </div>
@@ -77,12 +79,13 @@ export default function Contact() {
                             <textarea
                                 rows="4"
                                 placeholder="How can we help?"
+                                required
                                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors resize-none placeholder:text-gray-500"
                             ></textarea>
                         </div>
 
                         <button
-                            type="button"
+                            type="submit"
                             className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2 transition-all hover:scale-[1.02]"
                         >
                             <Send size={18} />

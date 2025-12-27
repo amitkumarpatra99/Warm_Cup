@@ -67,6 +67,7 @@ const PaymentPage = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
+              required
               className="w-full px-4 py-3 rounded-lg bg-[#0b1a2a] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all duration-200"
             />
           </div>
@@ -93,6 +94,7 @@ const PaymentPage = () => {
               type="number"
               name="amount"
               placeholder="Enter amount"
+              required
               className="w-full px-4 py-3 rounded-lg bg-[#0b1a2a] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all duration-200"
             />
           </div>
