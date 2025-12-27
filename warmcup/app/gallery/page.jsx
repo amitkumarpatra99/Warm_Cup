@@ -34,7 +34,7 @@ export default function Gallery() {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] text-white px-6 py-24 md:py-32 relative overflow-hidden">
+        <div className="min-h-screen bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] text-white px-6 py-20 md:py-32 relative overflow-hidden">
 
             {/* ✨ Background Glow */}
             <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,#38bdf815,transparent_50%),radial-gradient(circle_at_bottom_left,#2563eb15,transparent_50%)] pointer-events-none"></div>

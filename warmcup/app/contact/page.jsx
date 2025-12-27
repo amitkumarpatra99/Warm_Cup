@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 export default function Contact() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] text-white flex justify-center items-center px-4 py-24 relative overflow-hidden">
+        <div className="min-h-screen bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] text-white flex justify-center items-center px-4 py-16 md:py-24 relative overflow-hidden">
 
             {/* ✨ Background Glow */}
             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,#38bdf822,transparent_60%),radial-gradient(circle_at_bottom_left,#2563eb22,transparent_60%)] pointer-events-none"></div>
@@ -60,7 +60,7 @@ export default function Contact() {
                                 type="text"
                                 placeholder="Your Name"
                                 required
-                                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-gray-500"
+                                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-base focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-gray-500"
                             />
                         </div>
 
@@ -70,7 +70,7 @@ export default function Contact() {
                                 type="email"
                                 placeholder="your@email.com"
                                 required
-                                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-gray-500"
+                                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-base focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-gray-500"
                             />
                         </div>
 
@@ -80,7 +80,7 @@ export default function Contact() {
                                 rows="4"
                                 placeholder="How can we help?"
                                 required
-                                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors resize-none placeholder:text-gray-500"
+                                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-base focus:outline-none focus:border-cyan-500 transition-colors resize-none placeholder:text-gray-500"
                             ></textarea>
                         </div>
 

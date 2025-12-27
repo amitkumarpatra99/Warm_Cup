@@ -68,7 +68,7 @@ const PaymentPage = () => {
               name="name"
               placeholder="Enter your name"
               required
-              className="w-full px-4 py-3 rounded-lg bg-[#0b1a2a] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all duration-200"
+              className="w-full px-4 py-3 rounded-lg bg-[#0b1a2a] text-white text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all duration-200"
             />
           </div>
 
@@ -80,7 +80,7 @@ const PaymentPage = () => {
               value={paymentform.message}
               name="message"
               placeholder="Write a message..."
-              className="w-full px-4 py-3 rounded-lg bg-[#0b1a2a] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 resize-none transition-all duration-200"
+              className="w-full px-4 py-3 rounded-lg bg-[#0b1a2a] text-white text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 resize-none transition-all duration-200"
               rows="3"
             />
           </div>
@@ -95,7 +95,7 @@ const PaymentPage = () => {
               name="amount"
               placeholder="Enter amount"
               required
-              className="w-full px-4 py-3 rounded-lg bg-[#0b1a2a] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all duration-200"
+              className="w-full px-4 py-3 rounded-lg bg-[#0b1a2a] text-white text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all duration-200"
             />
           </div>
 
